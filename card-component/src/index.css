@@ -1,0 +1,19 @@
+.card{
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  /* max-width: 250px; */
+  display: inline-block;
+  width: 50%; height: auto;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.card-image{
+  width: 100%;
+  border-radius: 20px;
+  
+}

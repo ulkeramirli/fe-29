@@ -1,0 +1,62 @@
+
+.bcg{
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.compon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.h1-create{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #231656;
+}
+
+.p-create{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #4E4E4E;
+}
+
+.phone-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+
+.phone-image {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 80%;
+    transform: translate(-50%, +50%); 
+}
+
+.phone-text{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    line-height: 60px;
+    margin-bottom: 30%;
+}
+
+.img{
+    cursor: pointer;
+}

@@ -1,0 +1,87 @@
+.visa-cart{
+    padding: 100px 40px 100px 100px;
+    height: 100vh;
+    background-color: #303030;
+    margin-top: 8%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+}
+
+.visa-cards{
+    width: 80%; 
+    height: auto; 
+    margin-left: 60px; 
+}
+
+.visa-text{
+    font-weight: 600;
+    flex: 1;
+}
+
+.visa-h1{
+    color: #8C8C8C;
+}
+
+.visa-span{
+    color: #fff;
+}
+
+.visa-p{    
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+  
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+  
+.checked {
+    background-color: orange;
+    border-color: orange;
+}
+
+.circle:hover{
+    border-color: orange;
+}
+
+.checked:hover{
+    border-color: black;
+
+}
+  
+.checkmark {
+    color: white;
+    font-size: 16px;
+}
+  
+.circle-text {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.circle-text:hover{
+    text-decoration: underline;
+    color: #8C8C8C;
+}
+  
+  

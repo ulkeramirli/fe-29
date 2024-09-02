@@ -1,0 +1,79 @@
+.ratest-list {
+    min-height: 200px;
+    background: #fff;
+    padding: 80px;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.rating-bcg{
+    background-image: url('/rating.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 180vh;
+    width: auto;
+    padding: 30px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.ratest-image img {
+    border-radius: 50%;
+    width: 90px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.ratest-content {
+    flex: 1;
+}
+
+.ratest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ratest-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ratest-role {
+    color: #625FFB;
+    margin: 0;
+    cursor: pointer;
+}
+
+.ratest-role:hover {
+    color: #625FFB;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.ratest-rating {
+    font-size: 40px;
+    color: #FFB545; 
+    margin-bottom: 20px;
+}
+
+.ratest-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+.ratest-text {
+    font-size: 16px;
+    color: #555;
+}

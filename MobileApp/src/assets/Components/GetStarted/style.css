@@ -1,0 +1,74 @@
+.getstarted-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    padding: 50px;
+    width: 25%;
+    height: auto;
+}
+  
+.getstarted-image {
+    width: 100%;
+    height: auto;
+}
+  
+.getstarted-content {
+    padding: 15px;
+}
+  
+.getstarted-price-month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.getstarted-price {
+    font-size: 30px;
+    font-weight: 500;
+    color: #3D3269;
+    cursor: pointer;
+    text-decoration: line-through;
+}
+  
+.getstarted-month {
+    font-size: 20px;
+    color: #3D3269;
+    font-weight: 500;
+}
+  
+.getstarted-description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4E4E4E;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 50px 20px 50px;
+    text-align: left;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.getstarted-description:hover{
+    text-decoration: underline;
+}
+  
+.getstarted-button {
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+    background-color:#D7D7D7;
+    color: #231656;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+  
+.getstarted-button:hover {
+    background-color: #231656;
+    color: #fff;
+}

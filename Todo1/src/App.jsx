@@ -49,7 +49,7 @@ const MyTodo = () => {
                 <span>{word}</span>
                 <button 
                   onClick={() => deleteIcone(index)} 
-                  className="text-red-500 font-bold ml-3"
+                  className="font-bold ml-3"
                 >
                   <img src={trashImage} alt="Delete" className="w-5 h-5" />
                 </button>
