@@ -1,15 +1,15 @@
-.card-with-image-on-right {
+/* .card-with-image-on-right {
     display: flex;
     border: 1px solid  #F8F8F8;
     border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 15px -15px 2px 0px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
     margin: 10px;
     background-color: #F8F8F8;
     margin-top: 15px;
     padding: 25px;
-  }
+}
   
 .card-text,
 .card-image {
@@ -42,4 +42,4 @@
     height: auto;
     
 }
-  
+   */

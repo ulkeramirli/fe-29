@@ -2,7 +2,7 @@ import "./style.css";
 
 
 
-const GetStarted = ({ imageUrl, price, month, description }) => {
+const GetStarted = ({ imageUrl, price, discount, month, description }) => {
     return (
         <>
     <div className="getstarted-card">
@@ -12,6 +12,7 @@ const GetStarted = ({ imageUrl, price, month, description }) => {
             <span className="getstarted-price">{price}</span>
             <span className="getstarted-month">{month}</span>
           </div>
+          <span className="getstarted-discount">{discount}</span>
           <p className="getstarted-description">{description}</p>
           <button className="getstarted-button">Get Started</button>
         </div>

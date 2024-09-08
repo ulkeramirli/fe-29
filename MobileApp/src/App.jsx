@@ -1,5 +1,4 @@
-import "./App.css";
-import Header from "./assets/Components/Footer/Header";
+// import "./App.css";
 import Create from "./assets/Components/Create";
 import Payment from "./assets/Components/Payments";
 import Cart from "./assets/Components/Cart";
@@ -12,8 +11,6 @@ import About from "./assets/Components/About";
 import Features from "./assets/Components/Features";
 import Pricing from "./assets/Components/Pricing";
 import Blog from "./assets/Components/Blog";
-
-// import DarkMode from "./assets/Components/DarkMode";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -51,7 +48,7 @@ function App() {
         text: `Response stopped Sent by Copilot: Guido van Rossum is a renowned Dutch programmer best known for creating the Python programming language. He was born on January 31, 1956, in the Netherlands. Van Rossum has had a significant impact on the world of programming and technology.`,
       },
       {
-        imgSrc: './torvalds.png',
+        imgSrc: './linus2.png',
         name: ' Linus Torvalds',
         role: 'Product Designer At Uber.INC',
         rating: 5,
@@ -64,7 +61,7 @@ function App() {
   
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Routes>
             <Route path="/" element={<About />} />
             <Route path="/Features" element={<Features />} />
@@ -72,13 +69,14 @@ function App() {
             <Route path="/Blog" element={<Blog />} />
       </Routes>
 
-      <section className="background">
-        <div className="container">
-          <div className="hero-section-content">
-            <h1 className="hero-section-h1">Ready To Launch Your <br />
-              Online <span className="color">Payment</span> Payment App</h1>
-            <p className="hero-section-p">A Simple Yet Modern Solution To Showcase Your App</p>
-            <button className="main-btn">Get Started</button>
+      <section  className="bg-cover bg-center bg-no-repeat h-[150vh] w-[99vw] flex justify-center items-center mb-[100px]"
+  style={{ backgroundImage: "url('./bcg.png')" }}>
+        <div  className="w-[90%] mx-auto">
+          <div className="text-center leading-[80px] mb-[200px]">
+            <h1 className="text-[#231656] text-[80px] font-semibold leading-[80px] text-center md:text-[60px] md:leading-[70px] sm:text-[40px] sm:leading-[50px]">Ready To Launch Your <br />
+              Online <span className="text-white">Payment</span> Payment App</h1>
+        <p className="text-[#231656] text-[25px] font-semibold font-sans md:text-[20px] sm:text-[18px]">A Simple Yet Modern Solution To Showcase Your App</p>
+            <button className="py-[5px] px-[70px] rounded-full bg-[#231656] text-white cursor-pointer text-[20px] font-semibold md:px-[50px] md:py-[4px] md:text-[18px] sm:px-[30px] sm:py-[3px] sm:text-[16px]">Get Started</button>
           </div>    
         </div> 
       </section>
@@ -87,77 +85,92 @@ function App() {
       <Payment />
       <Cart />
 
-     <div className="cart-text">
-        <h1>Why it is <br /> Worth Choosing <span className="cart-span">PrimePay.</span></h1>
-      </div>
+   
+<div className="text-center text-gray-400 mt-20 text-4xl font-semibold sm:text-3xl md:text-5xl mb-7 ">
+  <h1>Why it is <br /> Worth Choosing <span className="text-blue-900">PrimePay.</span></h1>
+</div>
 
-      <div className="cart-container">
-        <CardWithImageOnRight
-          imageSrc="./icones.png"
-          title="Integration other"
-          description="Lorem ipsum dolor sit amet, consectetur  adipisicing elit, sed do eiusmod tempor incididunt Laoreet non curabitur gravida sagittis aliquam bibendum."
-        />
 
-        <Cart
-          imageSrc="./fPrint.png"
-          title="Safe & Security"
-          description="Easily integrate with all your need favorite tools through and APIsing including automatic"
-        />
+<div className="flex flex-wrap justify-around p-10 gap-5 sm:gap-4 md:gap-6">
+  <CardWithImageOnRight
+    imageSrc="./icones.png"
+    title="Integration other"
+    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Laoreet non curabitur gravida sagittis aliquam bibendum."
+  />
 
-        {cardsData.map((card, index) => (
-          <Cart
-            key={index}
-            imageSrc={card.imageSrc}
-            title={card.title}
-            description={card.description}
-          />
-        ))}
-      </div>
-     <div className="container"> 
-     <div className="rating-bcg">
+  <Cart
+    imageSrc="./fPrint.png"
+    title="Safe & Security"
+    description="Easily integrate with all your need favorite tools through and APIsing including automatic"
+  />
+
+  {cardsData.map((card, index) => (
+    <Cart
+      key={index}
+      imageSrc={card.imageSrc}
+      title={card.title}
+      description={card.description}
+    />
+  ))}
+</div>
+
+
+<div className="w-[90%] mx-auto">
+  <div className="text-center bg-[url('/rating.png')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center rounded-[20px] p-[90px_30px] mt-[10%] w-full h-auto">
+    <h1 className="text-4xl font-semibold text-white mb-5 sm:text-3xl md:text-5xl">
+      “Say goodbye to clutter and <br /><span className="text-blue-900">bounce rates.</span>
+    </h1>
+
     {reviews.map((ratest, index) => (
-        <RatestList
+      <RatestList
         key={index}
         imgSrc={ratest.imgSrc}
-        name= {ratest.name}
+        name={ratest.name}
         role={ratest.role}
         rating={ratest.rating}
-        text= {ratest.text}
-        />
+        text={ratest.text}
+      />
+    ))}
+  </div>
+</div>
 
-      ))}
+<Awards />
+<VisaCart />
 
-     </div>
-     </div>
-     <Awards/>
-     <VisaCart/>
-  
-    <div className="container">
-      <div className="get">
-      <h2 className="getstarted-h2">Our payment services <br /> <span className="getstarted-span"> worldwide</span></h2>
-      </div>
-        
-    </div>
-        <div className="cards-container">
-          <GetStarted 
-            imageUrl="./basic.png" 
-            price="$10.00" 
-            month="Month" 
-            description="Modern Design Easy to Customize Quickly Set Up A Website Another Feature 24/7 Customer Support"
-          />
-          <GetStarted 
-            imageUrl="./standard.png" 
-            price="$19.00" 
-            month="Month" 
-            description="Modern Design Easy to Customize Quickly Set Up A Website Another Feature 24/7 Customer Support"
-          />
-          <GetStarted 
-            imageUrl="./premium.png" 
-            price="$35.00" 
-            month="Month" 
-            description="Modern Design Easy to Customize Quickly Set Up A Website Another Feature 24/7 Customer Support"
-          />
-        </div>
+
+<div className="w-[90%] mx-auto">
+  <div className="text-center">
+    <h2 className="text-4xl font-semibold text-gray-400 sm:text-3xl md:text-5xl">
+      Our payment services <br /> <span className="text-blue-900">worldwide</span>
+    </h2>
+  </div>
+</div>
+
+
+<div className="flex flex-wrap justify-between mt-5 gap-5 sm:gap-4 md:gap-6">
+  <GetStarted 
+    imageUrl="./basic.png" 
+    price="$10.00"
+    discount="Only $5.99" 
+    month="Month" 
+    description="Modern Design Easy to Customize Quickly Set Up A Website Another Feature 24/7 Customer Support"
+  />
+  <GetStarted 
+    imageUrl="./standard.png" 
+    price="$19.00"
+    discount="Only $12.99"  
+    month="Month" 
+    description="Modern Design Easy to Customize Quickly Set Up A Website Another Feature 24/7 Customer Support"
+  />
+  <GetStarted 
+    imageUrl="./premium.png" 
+    price="$35.00"
+    discount="Only $20.99"  
+    month="Month" 
+    description="Modern Design Easy to Customize Quickly Set Up A Website Another Feature 24/7 Customer Support"
+  />
+</div>
+
     </>
   );
 }

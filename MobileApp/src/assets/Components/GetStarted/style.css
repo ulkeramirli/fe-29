@@ -2,11 +2,14 @@
     width: 300px;
     border: 1px solid #ddd;
     border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 13px -10px 10px rgba(0, 0, 0, 0.1);
     margin: 40px;
     padding: 50px;
-    width: 25%;
+    width: 28%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F2F2F2;
 }
   
 .getstarted-image {
@@ -32,6 +35,13 @@
     cursor: pointer;
     text-decoration: line-through;
 }
+
+.getstarted-discount{
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight:600 ;
+    color: #231656;
+}
   
 .getstarted-month {
     font-size: 20px;
@@ -43,12 +53,13 @@
     font-size: 20px;
     font-weight: 400;
     color: #4E4E4E;
+    margin-top: 15px;
     margin-bottom: 15px;
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px 50px 20px 50px;
+    padding: 40px 60px 40px 60px;
     text-align: left;
-    line-height: 30px;
+    line-height: 40px;
     cursor: pointer;
 }
 
@@ -61,14 +72,16 @@
     padding: 20px 30px 20px 30px;
     background-color:#D7D7D7;
     color: #231656;
-    border: none;
+    border-color: #2316565b;
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
     text-align: center;
+    margin-top: 20px;
 }
   
 .getstarted-button:hover {
     background-color: #231656;
     color: #fff;
+    border-color: #D7D7D7 ;
 }
